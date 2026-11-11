@@ -28,10 +28,9 @@ Os arquivos em `cells/` são as células do notebook do Colab, na ordem de execu
 | 17 e 18 | `cells/17_18_benchmark_cv_e_shap_v2.py` | Benchmark de quatro modelos, validação cruzada 5-fold, SHAP |
 | 19 | `cells/19_ranking_shap_exato.py` | Ranking exato de E[\|SHAP\|] |
 | 20 a 22 | `cells/20_22_figuras_complementares.py` | Figuras 4.1, 4.2 e 4.3 do notebook |
-| 23 | `cells/23_radar_personas_ORIGINAL_valores_fixos.py` | Radar das personas com valores digitados à mão |
-| 23b | `cells/23b_radar_personas_calculado.py` | Proposta: tabela de centroides e radar calculados dos dados |
+| 23 | `cells/23_radar_personas.py` | Figura 14: radar dos centroides padronizados, calculado dos dados |
 | 24 | `cells/24_exportacao_resultados.py` | Compacta PNGs e CSVs gerados (executar por último) |
-| legado | `legacy/kmeans_base_bruta_com_erro_de_target.py` | Execução antiga, inválida; não usar |
+| legado | `legacy/` | Execuções antigas, inválidas ou superadas; não usar |
 
 ## Como executar
 
@@ -48,5 +47,5 @@ pip install -r requirements.txt
 - A winsorização (1% por cauda) e o ΔGPA são calculados na base inteira antes da partição treino/teste. O IPD do modelo oficial usa média e desvio do treino.
 - Precisão, Revocação e F1 são médias ponderadas pelo suporte das classes, por isso a Revocação ponderada é igual à acurácia.
 - O Código 10 está superado: use os Códigos 14 a 16 para as personas.
-- O radar do Código 23 usa valores fixos; use o Código 23b para gerar a figura a partir dos dados.
-- As tabelas de personas do texto do TCC devem ser geradas a partir dos Códigos 15, 16 e 23b numa única execução.
+- O radar do Código 23 é calculado dos dados. A versão antiga, com valores digitados à mão, está em `legacy/`.
+- As tabelas de personas do texto do TCC devem ser geradas a partir dos Códigos 15, 16 e 23 numa única execução.
