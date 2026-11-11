@@ -38,6 +38,8 @@ Os arquivos em `cells/` são as células do notebook do Colab, na ordem de execu
 pip install -r requirements.txt
 ```
 
+Versões de referência: Python 3.13 (Google Colab), conforme `requirements.txt`.
+
 1. Baixe o CSV do Kaggle e salve em `data/ai_student_impact_dataset.csv`.
 2. No Colab (ou Jupyter), cole as células de `cells/` na ordem dos códigos, uma por célula, e execute em sequência.
 3. Parâmetros fixos: `random_state=42` em todos os splits, modelos e no K-Means; partição 80/20 estratificada; hiperparâmetros fixados manualmente, sem busca.
