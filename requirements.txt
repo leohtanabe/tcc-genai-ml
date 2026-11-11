@@ -1,0 +1,10 @@
+# Versões não fixadas: preencher com a saída de `pip freeze` do Colab usado no TCC.
+numpy
+pandas
+scipy
+scikit-learn
+lightgbm
+xgboost
+shap
+matplotlib
+seaborn
